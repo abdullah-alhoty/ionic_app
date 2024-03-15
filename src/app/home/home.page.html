@@ -1,0 +1,9 @@
+<ion-button (click)="startProcess()">Start</ion-button>
+
+<ion-content>
+  <div *ngIf="processRunning">
+    <img *ngFor="let image of images" src="{{image.url}}">
+    <p>Calculation completed: {{ result }}</p>
+    <p *ngFor="let list of lists"> add element to list </p>
+  </div>
+</ion-content>
